@@ -11,5 +11,5 @@
     "types": ["@testing-library/jest-dom"],
     "jsx": "react-jsx"
   },
-  "include": ["vite.config.ts", "vitest.setup.ts"]
+  "include": ["vite.config.ts", "vitest.setup.ts", "./src/mocks"]
 }
