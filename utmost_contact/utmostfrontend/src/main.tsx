@@ -2,18 +2,28 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.tsx";
+import ErrorPage from "./ErrorPage.tsx";
 import "./index.css";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage />,
   },
   {
     path: "/contacts",
     element: (
       <div>
         <h1>Utmost Contacts</h1>
+      </div>
+    ),
+  },
+  {
+    path: "/contacts/:contactId",
+    element: (
+      <div>
+        <h1>Utmost Contact Details</h1>
       </div>
     ),
   },
